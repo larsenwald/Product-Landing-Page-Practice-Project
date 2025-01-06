@@ -1,0 +1,245 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-margin-top: 80px;
+}
+body {
+  background: rgb(200, 200, 200);
+  font-family: "Open Sans";
+  font-size: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+}
+header {
+  backdrop-filter: blur(10px);
+  background: rgb(200, 200, 200, 0.5);
+  border: solid 1px rgb(90, 90, 90);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+}
+#nav-bar {
+  width: max(317px, 30%);
+  display: flex;
+  justify-content: space-around;
+}
+@media only screen and (max-width: 630px) {
+  #nav-bar {
+    display: none;
+  }
+  #header {
+    width: max(242px, 100%);
+  }
+}
+#nav-bar a {
+  height: 100%;
+  text-decoration: none;
+  color: black;
+}
+#nav-bar a:hover {
+  color: grey;
+}
+.img-and-h1 {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+header img {
+  width: 100px;
+}
+main {
+  margin-top: 80px;
+  padding: 20px;
+  width: min(886px, 70%);
+}
+section {
+  scroll-margin-top: 80px;
+}
+#hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30vh;
+}
+#hero h2 {
+  margin-bottom: 0;
+}
+#hero p {
+  width: 500px;
+  text-align: center;
+  font-style: italic;
+}
+#hero input {
+  padding: 10px;
+}
+#hero input:nth-of-type(2) {
+  margin-left: -5px;
+}
+.price-card {
+  border: solid 1px;
+}
+#What-We-Do h2 {
+  text-align: center;
+}
+
+#What-We-Do ul {
+  padding: 0;
+  list-style: none;
+  font-size: 2rem;
+}
+#What-We-Do li {
+  display: flex;
+  margin-bottom: 50px;
+}
+#What-We-Do .fa-solid {
+  font-size: 5rem;
+  margin-right: 5rem;
+}
+#What-We-Do > p:first-of-type {
+  text-align: center;
+}
+.description h4 {
+  font-size: 2rem;
+  margin: 0;
+}
+.description p {
+  font-size: 1.5rem;
+  margin: 0;
+}
+.quote-container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  background: dodgerblue;
+  padding: 1rem;
+  color: white;
+  border-radius: 10px;
+  font-size: 1.8rem;
+}
+@media only screen and (max-width: 700px) {
+  .quote-container {
+    flex-direction: column;
+    width: max(323px, 100%);
+  }
+}
+.quote-container img {
+  width: 300px;
+  margin-right: 1rem;
+}
+#Example-Shenanigans {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#Pricing {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+}
+.price-card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+@media only screen and (max-width: 1025px) {
+  .price-card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 813px) {
+  .price-card-container {
+    grid-template-columns: 1fr;
+  }
+}
+.price-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.price-card-header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgb(150, 150, 150);
+  padding: 10px;
+}
+.price-card-header h3,
+.price-card-header p {
+  margin: 0;
+}
+.price-card-header p {
+  font-style: italic;
+}
+.price-card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.price-card-content > p:first-of-type {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.price-card-content ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.price-card-content li {
+  margin-bottom: 5px;
+}
+.price-card-content > p:last-of-type {
+  font-style: italic;
+}
+.price-card a {
+  margin-top: auto;
+  margin-bottom: 5px;
+  background: dodgerblue;
+  padding: 10px 40px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: white;
+  transition: transform 0.2s;
+}
+.price-card a:hover {
+  transform: scale(1.1);
+}
+footer {
+  background: grey;
+  width: 100vw;
+  height: 100%;
+}
+footer .links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+footer a {
+  color: black;
+}
+footer a:hover {
+  color: darkgrey;
+}
+footer p {
+  margin-left: auto;
+  margin-right: auto;
+  color: lightgrey;
+  background: black;
+  width: max-content;
+}
